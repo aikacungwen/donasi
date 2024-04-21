@@ -1,0 +1,232 @@
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #333;
+            color: #fff;
+        }
+
+        table.header {
+            width: 100%;
+            background-color: #000;
+            color: #fff;
+            border: 2px solid #2cdb33;
+            margin: 0 auto;
+        }
+
+        table.header td {
+            padding: 8px;
+            text-align: center;
+        }
+
+        table.header a.home-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #2cdb33;
+            color: #000;
+            text-decoration: none;
+            border-radius: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        table.header a.home-button:hover {
+            background-color: #ff9900;
+        }
+
+        .anime-container {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            padding: 20px;
+            background-color: #000;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+        }
+
+        .poster {
+            max-width: 150px;
+            height: 200px;
+            margin-right: 20px;
+            flex-shrink: 0;
+        }
+
+        .info {
+            flex-grow: 1;
+        }
+
+        h2,
+        p {
+            margin: 0;
+        }
+
+        h2 {
+            color: #2cdb33;
+        }
+
+        p {
+            color: #666;
+        }
+
+        .info p {
+            margin-bottom: 10px;
+        }
+
+        .info span {
+            font-weight: bold;
+            color: #2cdb33;
+        }
+
+        #video-container {
+            position: relative;
+            width: 100%;
+            max-width: 800px;
+            margin: auto;
+            margin-top: 20px;
+        }
+
+        #video-player {
+            width: 100%;
+            height: 400px;
+        }
+
+        #playlist {
+            list-style-type: none;
+            padding: 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+            gap: 10px;
+            margin-top: 20px;
+            box-sizing: border-box;
+            justify-content: center;
+        }
+
+        #playlist li {
+            cursor: pointer;
+            padding: 10px;
+            background-color: #2cdb33;
+            box-sizing: border-box;
+            text-align: center;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin: 5px;
+            position: relative;
+        }
+
+        .new-label {
+            position: absolute;
+            top: 1px;
+            left: 1px;
+            background-color: #ff0000;
+            color: #fff;
+            padding: 1px;
+            border-radius: 1px;
+            font-size: 4px;
+        }
+
+        .footer {
+            background-color: #000;
+            color: #2cdb33;
+            padding: 20px;
+            text-align: center;
+            border-top: 2px solid #2cdb33;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        @media (max-width: 600px) {
+            .anime-container {
+                flex-direction: column;
+            }
+
+            .poster {
+                max-width: 100%;
+                height: auto;
+                margin-bottom: 10px;
+            }
+
+            #video-player {
+                height: 230px;
+            }
+
+            #playlist {
+                grid-template-columns: repeat(6, 1fr);
+            }
+        }
+/* Tambahkan aturan ini di dalam tag <style> Anda */
+
+@font-face {
+    font-family: 'Gong Normal';
+    src: url('../font/GongNormal.ttf') format('truetype'); /* Ganti nama file dengan nama sesuai dengan file font yang Anda miliki */
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Gong Normal', Arial, sans-serif; /* Gunakan 'Gong Normal' sebagai font utama, jika tidak tersedia gunakan Arial atau sans-serif sebagai alternatif */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Gong Normal', Arial, sans-serif;
+}
+
+/* Tambahkan aturan ini jika Anda ingin mengganti font pada elemen lainnya */
+/* Contoh: */
+p {
+    font-family: 'Gong Normal', Arial, sans-serif;
+}
+/* Tambahkan aturan ini di dalam tag <style> Anda */
+
+body {
+    font-family: 'Gong Normal', Arial, sans-serif;
+    font-size: 14px; /* Ganti nilai sesuai dengan ukuran font yang diinginkan */
+}
+
+h1 {
+    font-size: 18px; /* Ganti nilai sesuai dengan ukuran font yang diinginkan */
+}
+
+h2 {
+    font-size: 14px; /* Ganti nilai sesuai dengan ukuran font yang diinginkan */
+}
+
+h3 {
+    font-size: 13px; /* Ganti nilai sesuai dengan ukuran font yang diinginkan */
+}
+
+/* Tambahkan aturan ini jika Anda ingin mengganti ukuran font pada elemen lainnya */
+/* Contoh: */
+p {
+    font-size: 12px; /* Ganti nilai sesuai dengan ukuran font yang diinginkan */
+}
+.alert table {
+    width: 100%;
+    border-collapse: collapse; /* Untuk menghilangkan garis antar sel */
+}
+
+.alert-content {
+    background-color: #2cdb33; /* Warna latar belakang isi tabel */
+    color: #000; /* Warna teks isi tabel */
+    padding: 15px; /* Menyesuaikan padding */
+    border-radius: 5px;
+    font-size: 18px; /* Menyesuaikan ukuran font */
+}
+
+/* Responsive styles */
+@media screen and (max-width: 600px) {
+    .alert-content {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+}
+.alert {
+    background-color: #2cdb33; /* Warna hijau stabilo */
+    padding: 15px; /* Menyesuaikan padding */
+    border-radius: 10px; /* Corner radius untuk bentuk bulat panjang */
+    text-align: center;
+    margin: 10px; /* Ruang antara header dan peringatan */
+}
+    
